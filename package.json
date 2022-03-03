@@ -1,0 +1,20 @@
+{
+  "name": "02_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "modern-css-reset": "^1.4.0"
+  },
+  "volta": {
+    "node": "16.14.0",
+    "npm": "8.5.3"
+  }
+}
