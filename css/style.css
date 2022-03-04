@@ -2,7 +2,7 @@
   --black-color: #3d3d3d;
   --grey-color: #D3D3D3;
   --dark-grey-color: #707070;
-  --bg-color: #C9C9C9;
+  --bg-color: #F5F5F5;
   --teal-color : #00A198;
   --font-size: 18px;
   --container-bg-color: #fff;
@@ -12,17 +12,13 @@
 body {
   background-color: var(--bg-color);
   color: var(--black-color);
-  font-family:"proxima-nova";
+  font-family:"museo-sans";
   font-size: var(--font-size);
-  line-height: 2.25em;
+  line-height: 2em;
 }
 
 h1 {
   color: var(--teal-color);
-}
-
-p::first-line {
-  font-family: "museo-slab";
 }
 
 p {
@@ -35,7 +31,6 @@ p {
   margin: 50px auto;
   padding: 10px;
   max-width: var(--container-width);
-  filter: drop-shadow(5px 5px 5px var(--dark-grey-color));
 }
 
 .site-header nav {
@@ -43,6 +38,11 @@ p {
   font-family: "museo-slab";
   padding: 10px;
   text-transform: uppercase;
+}
+
+.site-header-cntr {
+  display: flex;
+  justify-content: center;
 }
 
 .site-header .nav a {
@@ -63,10 +63,18 @@ p {
   width: 250px;
 }
 
+.home-link-lg {
+  align-content: center;
+}
+
+.home-link-lg img {
+  width: 500px;
+}
+
 .intro {
   border-bottom: 1px solid var(--grey-color);
   font-family: "museo-slab";
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 1.25em;
   padding: 0px 0px 25px 0px;
   margin: 20px 0px;
@@ -75,10 +83,12 @@ p {
 .intro em {
   color: var(--teal-color);
   font-style: normal;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .site-footer {
+  font-family: "museo-slab";
   color: var(--dark-grey-color);
   font-size: .75em;
   line-height: 2.50em;
