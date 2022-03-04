@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-    env:
-      NODE_ENV: production
     steps:
       - uses: actions/checkout@v3
       - uses: volta-cli/action@v1
       - run: npm install
       - run: npm run build
+        env:
+          NODE_ENV: production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
