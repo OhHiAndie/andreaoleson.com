@@ -43,6 +43,12 @@ a:hover {
   max-width: var(--container-width);
 }
 
+.site-header {
+  border-bottom: 1px solid var(--dark-grey-color);
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
 .site-header nav {
   display: flex;
   font-family: "museo-slab";
@@ -56,12 +62,13 @@ a:hover {
 }
 
 .site-header .nav a {
-  color: var(--black-color);
+  color: var(--teal-color);
   text-decoration: none;
+  font-weight: 700;
 }
 
 .site-header .nav a:hover {
-  color: var(--teal-color);
+  color: var(--peach-color);
 }
 
 .home-link {
@@ -70,7 +77,7 @@ a:hover {
 }
 
 .home-link img {
-  width: 250px;
+  width: 300px;
 }
 
 .home-link-lg {
@@ -116,7 +123,7 @@ a:hover {
   }
 
   .home-link img {
-    width: 150px;
+    width: 275px;
   }
 
 }
@@ -160,6 +167,6 @@ a:hover {
   }
 
   .home-link img {
-    width: 125px;
+    width: 200px;
   }
 }
