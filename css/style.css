@@ -7,7 +7,7 @@
   --peach-color: #FF7F32;
   --font-size: 18px;
   --container-bg-color: #fff;
-  --container-width: 1300px;
+  --container-width: 1200px;
 }
 
 body {
@@ -109,11 +109,11 @@ a:hover {
   font-family: "museo-slab";
   color: var(--dark-grey-color);
   border-top: 10px double var(--grey-color);
-  font-size: .75em;
+  font-size: .50em;
   line-height: 2.50em;
   margin: 25px auto;
   max-width: var(--container-width);
-  padding-top: 50px;
+  padding-top: 25px;
   text-align: center;
 }
 
