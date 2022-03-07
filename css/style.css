@@ -139,6 +139,13 @@ a:hover {
   padding-top: 75px;
 }
 
+.big-link {
+  display: block;
+  text-align: center;
+  font-family:"museo-slab";
+  text-transform: uppercase;
+}
+
 .big-link a {
   color: var(--pink-color);
   font-weight: 700;
@@ -148,7 +155,6 @@ a:hover {
   text-decoration-style: wavy;
   text-underline-offset: 3px;
   line-height: 3em;
-  text-align: center;
 }
 
 .big-link a:hover {
@@ -272,6 +278,23 @@ a:hover {
 .social-icons li {
   display: inline-block;
   padding: 0 25px;
+}
+
+.social-icons-small {
+  list-style: none;
+}
+
+.social-icons-small ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons-small li {
+  padding: 0 25px;
+}
+
+.social-icons-small a {
+  padding-right: 25px;
 }
 
 @media only screen and (min-width: 960px) {
