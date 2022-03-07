@@ -25,6 +25,15 @@ h1 {
   color: var(--pink-color);
 }
 
+h3 {
+  color: var(--pink-color);
+  font-family: "museo-slab";
+  font-size: 1.5em;
+  line-height: 1.25em;
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+
 p {
   color: var(--black-color);
   padding-top: 25px;
@@ -83,6 +92,14 @@ a:hover {
   font-family: "museo-slab";
   padding: 10px;
   text-transform: uppercase;
+}
+
+.site-header nav .nav-container {
+  display: flex;
+}
+
+.site-header nav .nav-container ul {
+  align-self: center;
 }
 
 .site-header-cntr {
@@ -164,6 +181,35 @@ a:hover {
 .button:hover {
   background-color: var(--pink-color);
   color: var(--white-color)
+}
+
+.sub-section {
+  border-top: 2px dashed var(--pink-color);
+  margin: 25px 0;
+  padding: 25px 0;
+}
+
+.projects {
+  display: grid;
+  grid-template-areas: "a a a b b c"
+                       "a a a b b d"
+                       "e f f g g g"
+                       "h f f g g g";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.projects .project-a { grid-area: a; }
+.projects .project-b { grid-area: b; }
+.projects .project-c { grid-area: c; }
+.projects .project-d { grid-area: d; }
+.projects .project-e { grid-area: e; }
+.projects .project-f { grid-area: f; }
+.projects .project-g { grid-area: g; }
+.projects .project-h { grid-area: h; }
+
+.hello-img {
+  width: 25%;
 }
 
 .site-footer {
