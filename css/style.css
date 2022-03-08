@@ -208,7 +208,7 @@ a:hover {
 }
 
 .sub-section {
-  border-top: 2px dashed var(--pink-color);
+  border-top: 2px dashed var(--yellow-color);
   margin: 25px 0;
   padding: 25px 0;
 }
@@ -233,7 +233,7 @@ a:hover {
 .projects .project-h { grid-area: h; }
 
 .hello-img {
-  width: 25%;
+  width: 100%;
 }
 
 .site-footer {
@@ -248,15 +248,8 @@ a:hover {
   text-align: center;
 }
 
-@media only screen and (min-width: 769px) {
-  body {
-    font-size: 16px;
-  }
-
-  .home-link img {
-    width: 275px;
-  }
-
+.sub-section-reachout-1, .sub-section-reachout-2, .sub-section-reachout-3 {
+  padding: 0 25px;
 }
 
 .footer-emph {
@@ -290,11 +283,59 @@ a:hover {
 }
 
 .social-icons-small li {
-  padding: 0 25px;
+  padding: 0 5px;
 }
 
 .social-icons-small a {
-  padding-right: 25px;
+  padding-right: 5px;
+}
+
+.sub-section-reachout {
+  border-top: 2px dashed var(--yellow-color);
+  padding: 25px 0;
+}
+
+.sub-section-reachout-3 a {
+  display: inline-block;
+  background-color: var(--yellow-color);
+  font-family: "museo-slab";
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px 0 0 0;
+  width: 100%;
+}
+
+.sub-section-reachout-3 a:hover {
+  background-color: var(--pink-color);
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+
+  .home-link img {
+    width: 275px;
+  }
+
+  .sub-section-reachout {
+    display: flex;
+  }
+
+  .sub-section-reachout-1 {
+    width: 25%;
+  }
+
+  .sub-section-reachout-2 {
+    width: 40%;
+  }
+
+  .sub-section-reachout-3 {
+    width: 35%;
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -321,4 +362,5 @@ a:hover {
   .home-link img {
     width: 200px;
   }
+
 }
