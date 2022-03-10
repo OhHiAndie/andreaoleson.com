@@ -17,7 +17,7 @@ body {
   color: var(--black-color);
   font-family:"museo-sans";
   font-size: 18px;
-  line-height: 2em;
+  line-height: 1.5em;
   padding: 0 10px;
 }
 
@@ -141,34 +141,38 @@ a:hover {
 
 .big-link {
   display: block;
-  text-align: center;
-  font-family:"museo-slab";
-  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .big-link a {
-  color: var(--pink-color);
+  display: block;
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  font-family: "museo-slab";
+  font-size: 1em;
   font-weight: 700;
-  font-size: 1.25em;
-  line-height: em;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 3px;
-  line-height: 3em;
+  line-height: 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  margin: 25px auto;
+  width: 25%;
 }
 
 .big-link a:hover {
-  color: var(--yellow-color);
+  background-color: var(--yellow-color);
+  color: var(--black-color);
 }
 
 .intro {
-  border-bottom: 2px dashed var(--grey-color);
-  color: var(--yellow-color);
+  background-color: var(--light-yellow-color);
   font-family: "museo-slab";
   font-size: 1.5em;
+  font-weight: 700;
   line-height: 1.25em;
-  margin: 25px 50px 25px 50px;
-  padding-bottom: 25px;
+  margin: 5px 25px 5px 25px;
+  padding: 25px;
 }
 
 .intro em {
@@ -282,12 +286,8 @@ a:hover {
   padding: 0;
 }
 
-.social-icons-small li {
-  padding: 0 5px;
-}
-
 .social-icons-small a {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .sub-section-reachout {
@@ -298,18 +298,28 @@ a:hover {
 .sub-section-reachout-3 a {
   display: inline-block;
   background-color: var(--yellow-color);
+  color: var(--black-color);
   font-family: "museo-slab";
+  font-size: .75em;
   font-weight: 700;
+  line-height: 1em;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  padding: 5px 10px;
+  padding: 10px;
   margin: 5px 0 0 0;
   width: 100%;
 }
 
 .sub-section-reachout-3 a:hover {
   background-color: var(--pink-color);
+  color: var(--white-color);
+}
+
+.sub-section-contact {
+  background-color: var(--light-yellow-color);
+  padding: 5px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 769px) {
@@ -321,12 +331,24 @@ a:hover {
     width: 275px;
   }
 
+  .sub-section-intro {
+    display: flex;
+  }
+
+  .sub-section-intro-left {
+    width: 40%;
+  }
+
+  .sub-section-intro-right {
+    width: 60%;
+  }
+
   .sub-section-reachout {
     display: flex;
   }
 
   .sub-section-reachout-1 {
-    width: 25%;
+    width: 30%;
   }
 
   .sub-section-reachout-2 {
@@ -334,7 +356,7 @@ a:hover {
   }
 
   .sub-section-reachout-3 {
-    width: 35%;
+    width: 30%;
   }
 }
 
