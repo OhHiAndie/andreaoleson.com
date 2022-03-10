@@ -51,7 +51,8 @@ a:hover {
 }
 
 .blurb {
-  padding: 25px 0px 0px 0px;
+  border-left: 5px solid var(--yellow-color);
+  padding: 25px;
   font-size: 1em;
 }
 
@@ -126,7 +127,8 @@ a:hover {
   flex-grow: 1;
 }
 
-.home-link img {
+.home-link a {
+  display: block;
   width: 300px;
 }
 
@@ -157,7 +159,7 @@ a:hover {
   text-align: center;
   padding: 10px;
   margin: 25px auto;
-  width: 25%;
+  width: 75%;
 }
 
 .big-link a:hover {
@@ -166,7 +168,6 @@ a:hover {
 }
 
 .intro {
-  background-color: var(--light-yellow-color);
   font-family: "museo-slab";
   font-size: 1.5em;
   font-weight: 700;
@@ -279,6 +280,7 @@ a:hover {
 
 .social-icons-small {
   list-style: none;
+  border-left: 5px solid var(--yellow-color);
 }
 
 .social-icons-small ul li {
@@ -317,9 +319,13 @@ a:hover {
 }
 
 .sub-section-contact {
-  background-color: var(--light-yellow-color);
-  padding: 5px;
+  border: 2px dashed var(--light-yellow-color);
+  padding: 10px;
   text-align: center;
+}
+
+.sub-section-contact em {
+  color: var(--pink-color);
 }
 
 @media only screen and (min-width: 769px) {
@@ -327,7 +333,7 @@ a:hover {
     font-size: 16px;
   }
 
-  .home-link img {
+  .home-link a {
     width: 275px;
   }
 
@@ -358,6 +364,10 @@ a:hover {
   .sub-section-reachout-3 {
     width: 30%;
   }
+
+  .big-link a {
+    width: 50%;
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -381,8 +391,12 @@ a:hover {
     border-right: 0; 
   }
 
-  .home-link img {
+  .home-link a {
     width: 200px;
+  }
+
+  .big-link a {
+    width: 25%;
   }
 
 }
