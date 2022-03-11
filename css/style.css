@@ -2,6 +2,7 @@
   --black-color: #3d3d3d;
   --grey-color: #D3D3D3;
   --dark-grey-color: #707070;
+  --light-grey-color: #f5f4f4;
   --bg-color: #F5F5F5;
   --white-color: #F5F5F5;
   --pink-color : #F65275;
@@ -218,7 +219,22 @@ a:hover {
   padding: 25px 0;
 }
 
-.projects {
+.projects-project {
+  background-color: var(--light-grey-color);
+  padding: 25px 10px;
+  margin: 5px;
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-category {
+  font-family:"baskerville-urw";
+  line-height: .75em;
+}
+
+/* .projects {
   display: grid;
   grid-template-areas: "a a a b b c"
                        "a a a b b d"
@@ -235,7 +251,7 @@ a:hover {
 .projects .project-e { grid-area: e; }
 .projects .project-f { grid-area: f; }
 .projects .project-g { grid-area: g; }
-.projects .project-h { grid-area: h; }
+.projects .project-h { grid-area: h; } */
 
 .hello-img {
   width: 100%;
@@ -347,6 +363,21 @@ a:hover {
 
   .sub-section-intro-right {
     width: 60%;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projects-project {
+    /* width: 50%; */
+  }
+
+  .project-link {
+    text-decoration: none;
+    font-family: "museo-slab";
+    font-weight: 700;
   }
 
   .sub-section-reachout {
