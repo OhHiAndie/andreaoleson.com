@@ -74,6 +74,23 @@ a:hover {
   font-size: 1.25em;
 }
 
+.project-blurb::first-letter {
+  color: var(--yellow-color);
+  font-family:"museo-slab";
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1em;
+  padding: 0px;
+  margin-right: 8px;
+  float: left;
+}
+
+.project-blurb::first-line {
+  font-family:"baskerville-urw";
+  color: var(--dark-grey-color);
+  font-size: 1.25em;
+}
+
 .site-container {
   background-color: var(--container-bg-color);
   color: var(--black-color);
@@ -370,10 +387,6 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  .projects-project {
-    /* width: 50%; */
-  }
-
   .project-link {
     text-decoration: none;
     font-family: "museo-slab";
@@ -399,6 +412,30 @@ a:hover {
   .big-link a {
     width: 50%;
   }
+
+  .project-sections {
+    display: flex;
+  }
+
+  .project-section-left {
+    width: 30%;
+    border-right: 5px solid var(--yellow-color);
+    margin: 0 25px 0px 0px;
+    padding-right: 25px;
+  }
+
+  .project-section-right {
+    width: 70%;
+    margin: 0 25px 0px 25px;
+  }
+
+  .project-credits {
+    border-top: 2px dashed var(--grey-color);
+    font-size: .75em;
+    padding: 25px 0;
+    margin: 25px 0;
+  }
+
 }
 
 @media only screen and (min-width: 960px) {
