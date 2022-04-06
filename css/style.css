@@ -18,7 +18,7 @@ body {
   color: var(--black-color);
   font-family:"museo-sans";
   font-size: 18px;
-  line-height: 1.5em;
+  line-height: 1.75em;
   padding: 0 10px;
 }
 
@@ -29,10 +29,10 @@ h1 {
 h3 {
   color: var(--pink-color);
   font-family: "museo-slab";
-  font-size: 1.5em;
-  line-height: 1.25em;
-  padding: 25px 0;
+  font-size: 1.75em;
+  line-height: 1em;
   text-transform: uppercase;
+  padding: 25px 0;
 }
 
 p {
@@ -74,6 +74,15 @@ a:hover {
   font-size: 1.25em;
 }
 
+.stay-top {
+  position: sticky;
+  top: 0;
+}
+
+.project-blurb {
+  font-size: em;
+}
+
 .project-blurb::first-letter {
   color: var(--yellow-color);
   font-family:"museo-slab";
@@ -101,7 +110,7 @@ a:hover {
 }
 
 .site-header {
-  border-bottom: 10px double var(--grey-color);
+  border-bottom: 1px solid var(--grey-color);
   margin-bottom: 50px;
   padding-bottom: 10px;
 }
@@ -231,14 +240,14 @@ a:hover {
 }
 
 .sub-section {
-  border-top: 2px dashed var(--yellow-color);
-  margin: 25px 0;
-  padding: 25px 0;
+  border-top: 1px solid var(--grey-color);
+  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .projects-project {
   background-color: var(--light-grey-color);
-  padding: 25px 10px;
+  padding: 50px 20px;
   margin: 5px;
 }
 
@@ -277,7 +286,7 @@ a:hover {
 .site-footer {
   font-family: "museo-slab";
   color: var(--dark-grey-color);
-  border-top: 10px double var(--light-yellow-color);
+  border-top: 1px solid var(--yellow-color);
   font-size: .75em;
   line-height: 2.50em;
   margin: 25px auto;
@@ -326,8 +335,8 @@ a:hover {
 }
 
 .sub-section-reachout {
-  border-top: 2px dashed var(--yellow-color);
-  padding: 25px 0;
+  border-top: 1px solid var(--grey-color);
+  padding: 50px 0;
 }
 
 .sub-section-reachout-3 a {
@@ -361,6 +370,20 @@ a:hover {
   color: var(--pink-color);
 }
 
+.project-credits {
+  border-top: 1px solid var(--grey-color);
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
+.project-credits em {
+  color: var(--pink-color);
+  font-family:"museo-slab";
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 769px) {
   body {
     font-size: 16px;
@@ -384,6 +407,8 @@ a:hover {
 
   .projects {
     display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -419,9 +444,7 @@ a:hover {
 
   .project-section-left {
     width: 30%;
-    border-right: 5px solid var(--yellow-color);
     margin: 0 25px 0px 0px;
-    padding-right: 25px;
   }
 
   .project-section-right {
@@ -429,18 +452,11 @@ a:hover {
     margin: 0 25px 0px 25px;
   }
 
-  .project-credits {
-    border-top: 2px dashed var(--grey-color);
-    font-size: .75em;
-    padding: 25px 0;
-    margin: 25px 0;
-  }
-
 }
 
 @media only screen and (min-width: 960px) {
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .site-header .nav {
