@@ -17,7 +17,7 @@ body {
   background-color: var(--bg-color);
   color: var(--black-color);
   font-family:"museo-sans";
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.75em;
   padding: 0 10px;
 }
@@ -33,6 +33,14 @@ h3 {
   line-height: 1em;
   text-transform: uppercase;
   padding: 25px 0;
+}
+
+h4 {
+  color: var(--pink-color);
+  font-family: "museo-slab";
+  font-size: 1.25em;
+  text-transform: uppercase;
+  padding: 10px 0;
 }
 
 p {
@@ -54,7 +62,10 @@ a:hover {
 .blurb {
   border-left: 5px solid var(--yellow-color);
   padding: 25px;
-  font-size: 1em;
+  font-family:"museo-slab";
+  font-size: 1.25em;
+  line-height: 1.75em;
+  margin: 10px 0;
 }
 
 .blurb::first-letter {
@@ -62,16 +73,18 @@ a:hover {
   font-family:"museo-slab";
   font-size: 3em;
   font-weight: 700;
-  line-height: 1em;
+  line-height: .5em;
   padding: 0px;
   margin-right: 8px;
   float: left;
 }
 
 .blurb::first-line {
-  font-family:"baskerville-urw";
+  font-family:"museo-slab";
   color: var(--dark-grey-color);
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: 700;
+  font-variant: small-caps;
 }
 
 .stay-top {
@@ -86,9 +99,9 @@ a:hover {
 .project-blurb::first-letter {
   color: var(--yellow-color);
   font-family:"museo-slab";
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
-  line-height: 1em;
+  line-height: .5em;
   padding: 0px;
   margin-right: 8px;
   float: left;
@@ -196,7 +209,7 @@ a:hover {
 
 .intro {
   font-family: "museo-slab";
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 1.25em;
   margin: 5px 25px 5px 25px;
@@ -321,17 +334,13 @@ a:hover {
 }
 
 .social-icons-small {
+  display: flex;
   list-style: none;
-  border-left: 5px solid var(--yellow-color);
-}
-
-.social-icons-small ul li {
-  margin: 0;
-  padding: 0;
+  font-size: 2.5em;
 }
 
 .social-icons-small a {
-  padding-right: 10px;
+  padding: 20px;
 }
 
 .sub-section-reachout {
@@ -339,12 +348,12 @@ a:hover {
   padding: 50px 0;
 }
 
-.sub-section-reachout-3 a {
+.sub-section-footerlinks a {
   display: inline-block;
   background-color: var(--yellow-color);
   color: var(--black-color);
   font-family: "museo-slab";
-  font-size: .75em;
+  font-size: 1em;
   font-weight: 700;
   line-height: 1em;
   text-decoration: none;
@@ -355,7 +364,7 @@ a:hover {
   width: 100%;
 }
 
-.sub-section-reachout-3 a:hover {
+.sub-section-footerlinks a:hover {
   background-color: var(--pink-color);
   color: var(--white-color);
 }
@@ -384,6 +393,36 @@ a:hover {
   text-transform: uppercase;
 }
 
+.separator {
+  color: var(--yellow-color);
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.separator-small {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.degree {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.program {
+  font-weight: 900;
+  color: var(--pink-color);
+  text-transform: uppercase;
+}
+
+.school {
+  font-family:"museo-slab";
+}
+
+.date {
+  font-family:"baskerville-urw";
+}
+
 @media only screen and (min-width: 769px) {
   body {
     font-size: 16px;
@@ -404,6 +443,43 @@ a:hover {
   .sub-section-intro-right {
     width: 60%;
   }
+
+  .sub-section-twocol {
+    display: flex;
+  }
+
+  .sub-section-twocol-left {
+    width: 30%;
+    margin-right: 50px;
+  }
+
+  .sub-section-twocol-right {
+    width: 70%;
+  }
+
+.sub-section-threecol {
+  display: flex;
+}
+
+.sub-section-threecol ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-section-threecol-left {
+  margin-right: 10px;
+  width: 25%;
+}
+
+.sub-section-threecol-middle {
+  margin-right: 10px;
+  width: 25%;
+}
+
+.sub-section-threecol-right {
+  width: 50%;
+}
 
   .projects {
     display: grid;
