@@ -370,7 +370,6 @@ a:hover {
 }
 
 .sub-section-contact {
-  border: 2px dashed var(--light-yellow-color);
   padding: 10px;
   text-align: center;
 }
